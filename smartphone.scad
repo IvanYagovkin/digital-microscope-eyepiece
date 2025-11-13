@@ -1,7 +1,7 @@
 // smartphone.scad — смартфон
 smartphone();
 $fn = 128;
-r_round_corner = 15;
+r_round_corner = 15
 
 module block(){
     phone_height = 147;
