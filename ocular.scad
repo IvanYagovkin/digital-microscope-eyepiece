@@ -1,5 +1,5 @@
 // ocular.scad — окуляр
-ocular();
+ocular()
 module top(){
     difference(){
         cylinder(d = 30, h = 5, center = true);
