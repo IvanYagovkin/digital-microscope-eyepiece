@@ -1,7 +1,7 @@
 use <smartphone.scad>
 use <ocular.scad>
 
-phone_height = 147;
+phone_height = 147
 phone_width = 71;
 
 
