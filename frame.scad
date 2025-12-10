@@ -15,7 +15,7 @@ phone_width = 71;
 //color("red")
 //corner(thickness=20);
 
-
+//jaws
 module half_jaw(){
     difference(){
         block_jaw();
@@ -23,7 +23,7 @@ module half_jaw(){
         cube([40+25*2, 25*2, 9*3+1], center=true);
     }
 }
-//polygon([[10,20],[15,25],[25,45]]);
+//polygon([[10,20],[15,25],[25,45]);
 points = [[0,0],[0, 9*3+1],[11, 9*3+1],[11, 9],[0,0]];
 
 difference(){
