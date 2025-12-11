@@ -16,24 +16,29 @@ phone_width = 71;
 //corner(thickness=20);
 
 //jaws
-module half_jaw(){
+
+module half_jaws(){
+    difference(){
+        half_jaws1();
+        translate([0,1,-9*3/2])
+        rotate([90,0,180])
+        rotate([0,90,0])
+        linear_extrude(height=40+25*2, center = true)
+        polygon(points);
+    }
+}
+
+module half_jaws1(){
     difference(){
         block_jaw();
         translate([0, 25,0])
         cube([40+25*2, 25*2, 9*3+1], center=true);
     }
 }
-//polygon([[10,20][15,25],[25,45]);
+//polygon([[10,20],[15,25],[25,45]]);
 points = [[0,0],[0, 9*3+1],[11, 9*3+1],[11, 9],[0,0]];
 
-difference(){
-    half_jaw();
-    translate([0,1,-9*3/2])
-    rotate([90,0,180])
-    rotate([0,90,0])
-    linear_extrude(height=40+25*2, center = true)
-    polygon(points);
-}
+
 
 module block_jaw(){
     linear_extrude(height=9*3, center = true){

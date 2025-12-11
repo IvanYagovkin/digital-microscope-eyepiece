@@ -2,7 +2,7 @@ use <smartphone.scad>
 use <ocular.scad>
 use <frame.scad>
 
-echo ("Работа Яговкина ИВана");
+echo ("Работа Яговкина Ивана");
 
 $fn = 128;
 r_round_corner = 15;
@@ -15,17 +15,22 @@ smartphone();
 translate([0,0,9])
 color("red")
 frame_crossbar();
+color("green")
 translate([0,-30,-6])
 half_jaws();
+color("green")
 translate([0,30,-6])
 rotate([0,0,180])
 half_jaws();
+color("green")
 translate([74,0,-6])
 rotate([0,0,90])
 half_jaws();
+color("green")
 translate([-74,0,-6])
-rotate([0,0,90])
+rotate([0,0,-90])
 half_jaws();
+
 //translate([162/2-23/2-19,77/2-23/2-2,35/2+15])
 //rotate([180,0,0])
 //ocular();
